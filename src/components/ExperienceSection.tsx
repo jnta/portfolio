@@ -13,7 +13,7 @@ export default function ExperienceSection() {
             <span className="font-technical-label text-technical-label text-primary uppercase tracking-widest block mb-4">
               Portfolio
             </span>
-            <h2 className="font-display-lg text-display-lg">Engineering Cases</h2>
+            <h2 className="font-display-lg text-4xl md:text-5xl">Engineering Cases</h2>
           </div>
           <div className="font-technical-value text-outline">
             SELECTED_WORKS_V24
@@ -37,7 +37,7 @@ export default function ExperienceSection() {
               </div>
               <div className="p-8 lg:p-12 lg:w-2/5 flex flex-col justify-center flex-grow">
                 <div className="flex justify-between items-start mb-6">
-                  <h3 className="font-headline-lg text-headline-lg">
+                  <h3 className="font-headline-lg text-2xl md:text-3xl">
                     {caseItem.title}
                   </h3>
                   <span className="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
@@ -65,9 +65,9 @@ export default function ExperienceSection() {
           ))}
         </div>
 
-        <div>
+        <div id="open-source">
           <div className="flex items-center space-x-4 mb-8">
-            <h3 className="font-display-lg text-[32px] text-on-surface">Open Source & Architecture</h3>
+            <h3 className="font-display-lg text-3xl md:text-4xl text-on-surface">Open Source</h3>
             <div className="h-[1px] flex-grow bg-outline-variant/50"></div>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -84,7 +84,7 @@ export default function ExperienceSection() {
                     GITHUB_REPO / {project.id}
                   </span>
                 </div>
-                <h3 className="font-headline-lg text-headline-lg mb-4 text-on-surface group-hover:text-primary transition-colors">
+                <h3 className="font-headline-lg text-xl md:text-2xl mb-4 text-on-surface group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
                 <p className="font-body-md text-on-surface-variant mb-8">

@@ -36,29 +36,29 @@ export default function AnimatedHero() {
 
   return (
     <section
-      className="relative min-h-[90vh] flex items-center overflow-hidden border-b border-outline-variant"
+      className="relative min-h-[75vh] flex items-center overflow-hidden border-b border-outline-variant"
       id="hero"
     >
       <div className="absolute inset-0 z-0 opacity-10 industrial-grid"></div>
       <div className="compass-center hidden lg:block z-0" id="compass-bg">
         <div
-          className="compass-ring w-[600px] h-[600px] border-dashed"
+          className="compass-ring w-[450px] h-[450px] border-dashed"
           data-speed="0.2"
         ></div>
-        <div className="compass-ring w-[500px] h-[500px]" data-speed="-0.3">
+        <div className="compass-ring w-[350px] h-[350px]" data-speed="-0.3">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-[1px] bg-primary/20"></div>
           <div className="absolute top-1/2 left-0 -translate-y-1/2 w-full h-[1px] bg-primary/20"></div>
         </div>
         <div
-          className="compass-ring w-[400px] h-[400px] border-2 border-primary/10"
+          className="compass-ring w-[250px] h-[250px] border-2 border-primary/10"
           data-speed="0.5"
         ></div>
         <div
-          className="compass-ring w-[300px] h-[300px] border-dotted"
+          className="compass-ring w-[150px] h-[150px] border-dotted"
           data-speed="-0.1"
         ></div>
         <div
-          className="compass-ring w-[200px] h-[200px] bg-primary/5 blur-3xl"
+          className="compass-ring w-[100px] h-[100px] bg-primary/5 blur-3xl"
           data-speed="0"
         ></div>
         <div
@@ -82,7 +82,7 @@ export default function AnimatedHero() {
               {heroData.roleLabel}
             </span>
           </div>
-          <h1 className="font-display-lg text-display-lg lg:text-[72px] lg:leading-[80px] mb-8 text-on-surface max-w-4xl drop-shadow-2xl">
+          <h1 className="font-display-lg text-4xl md:text-5xl lg:text-6xl lg:leading-tight mb-6 text-on-surface max-w-3xl drop-shadow-2xl">
             {heroData.titlePart1}
             <span className="text-primary italic">
               {heroData.titleHighlight}
@@ -108,19 +108,7 @@ export default function AnimatedHero() {
               </a>
             ))}
           </div>
-          <div className="flex flex-wrap gap-6 items-center">
-            <button className="bg-primary text-on-primary px-8 py-4 rounded-DEFAULT font-technical-label text-technical-label uppercase tracking-widest satin-glow hover:opacity-90 transition-all">
-              {heroData.primaryAction}
-            </button>
-            <div className="flex items-center space-x-3 text-outline">
-              <span className="material-symbols-outlined text-[18px]">
-                verified
-              </span>
-              <span className="font-technical-label text-technical-label">
-                {heroData.certification}
-              </span>
-            </div>
-          </div>
+
         </div>
         <div className="lg:col-span-4 hidden lg:flex flex-col justify-end space-y-4 pb-20"></div>
       </div>

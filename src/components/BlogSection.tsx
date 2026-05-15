@@ -5,7 +5,7 @@ export default function BlogSection() {
     <section className="py-24 bg-surface relative" id="blog">
       <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="flex flex-col md:flex-row items-baseline justify-between mb-16 space-y-4 md:space-y-0">
-          <h2 className="font-display-lg text-display-lg">Infantaria Tech</h2>
+          <h2 className="font-display-lg text-4xl md:text-5xl">Infantaria Tech</h2>
           <div className="flex items-center space-x-4">
             <span className="font-technical-label text-technical-label text-outline uppercase">
               Engineering Diary
@@ -51,7 +51,7 @@ export default function BlogSection() {
               <span className="font-technical-label text-technical-label text-primary mb-4 block">
                 {post.id} {"//"} {post.date}
               </span>
-              <h3 className={`font-headline-lg text-headline-lg mb-6 leading-tight group-hover:text-primary transition-colors ${
+              <h3 className={`font-headline-lg text-2xl md:text-3xl mb-6 leading-tight group-hover:text-primary transition-colors ${
                 index === 0 ? "lg:text-[40px] lg:leading-tight lg:max-w-3xl" : ""
               }`}>
                 {post.title}

@@ -4,9 +4,9 @@ export default function TopNavBar() {
   return (
     <header className="w-full top-0 sticky bg-surface border-b border-outline-variant z-50">
       <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
-        <div className="font-display-lg text-headline-lg text-primary tracking-tighter">
+        <a className="font-display-lg text-2xl md:text-3xl text-primary tracking-tighter hover:opacity-80 transition-opacity duration-300" href="#hero">
           Jônata Albuquerque
-        </div>
+        </a>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a
@@ -32,9 +32,6 @@ export default function TopNavBar() {
               <span className="material-symbols-outlined align-middle ml-1 text-sm">
                 download
               </span>
-            </button>
-            <button className="bg-primary-container text-on-primary-container px-6 py-2 rounded-DEFAULT font-technical-label text-technical-label uppercase tracking-widest satin-glow hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">
-              Hire
             </button>
           </div>
         </nav>

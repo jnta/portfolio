@@ -1,19 +1,20 @@
 export const navLinks = [
+  { label: "About", href: "#hero" },
   { label: "Blog", href: "#blog" },
   { label: "Experience", href: "#experience" },
+  { label: "Open Source", href: "#open-source" },
 ];
 
 export const heroData = {
-  roleLabel: "System Architect & Backend Lead",
-  titlePart1: "Engenharia de Backend: ",
+  roleLabel: "Software Engineer",
+  titlePart1: "Arquitetura de Software: ",
   titleHighlight: "Escalabilidade",
   titlePart2: ", Resiliência e Sistemas Críticos",
   description:
-    "Especialista em ecossistemas Java e Cloud, com histórico na construção de sistemas de pagamento nacionais e integrações globais. Transformando requisitos complexos em arquiteturas distribuídas de alta performance.",
+    "Engenheiro de software especializado em ecossistemas Java e Cloud. Atuei na construção de core banking para pagamentos instantâneos em tempo real e em integrações de sistemas de larga escala entre múltiplos países. Focado em performance, resiliência e entrega de código de missão crítica.",
   links: [
     { label: "LINKEDIN", href: "#", icon: "link" },
     { label: "GITHUB", href: "#", icon: "code" },
-    { label: "SUBSTACK", href: "#", icon: "rss_feed" },
     { label: "EMAIL", href: "mailto:#", icon: "alternate_email" },
   ],
   primaryAction: "Consultar Projetos",
@@ -90,18 +91,19 @@ export const githubProjects = [
 
 export const footerData = {
   brand: "CORE_SYSTEMS_OPERATIONS",
-  infoLine1: "JÔNATA ALBUQUERQUE FERREIRA // ",
+  infoLine1: "JÔNATA ALBUQUERQUE // ",
   infoVersion: "BACKEND_ARCH_V1.0",
-  infoLine2: "ESTABLISHED 2024. ALL RIGHTS RESERVED.",
+  infoLine2: `ESTABLISHED ${new Date().getFullYear()}. ALL RIGHTS RESERVED.`,
   systemStatus: "SYSTEMS_HEALTH: OPTIMAL",
   connectLinks: [
     { label: "LinkedIn", href: "#" },
     { label: "GitHub", href: "#" },
-    { label: "Substack", href: "#" },
+    { label: "Email", href: "mailto:#" },
   ],
   navLinks: [
-    { label: "Back to Top", href: "#hero" },
-    { label: "Latest Logs", href: "#blog" },
-    { label: "Case Studies", href: "#experience" },
+    { label: "About", href: "#hero" },
+    { label: "Blog", href: "#blog" },
+    { label: "Experience", href: "#experience" },
+    { label: "Open Source", href: "#open-source" },
   ],
 };
