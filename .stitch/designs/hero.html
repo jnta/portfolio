@@ -1,0 +1,396 @@
+<!DOCTYPE html><html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Jônata Albuquerque Ferreira | Engineering Showcase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#690005",
+                      "on-primary": "#422b1f",
+                      "surface-container-high": "#292a2a",
+                      "surface": "#121414",
+                      "outline": "#9c8e88",
+                      "on-surface-variant": "#d3c3bc",
+                      "tertiary-fixed": "#e5e2e1",
+                      "on-surface": "#e3e2e2",
+                      "on-error-container": "#ffdad6",
+                      "surface-variant": "#343535",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "on-primary-fixed-variant": "#5a4134",
+                      "on-tertiary": "#313030",
+                      "outline-variant": "#4f453f",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "inverse-surface": "#e3e2e2",
+                      "secondary": "#c8c6c5",
+                      "secondary-container": "#474747",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "error": "#ffb4ab",
+                      "surface-container-highest": "#343535",
+                      "primary-container": "#4e3629",
+                      "primary-fixed": "#ffdbca",
+                      "on-background": "#e3e2e2",
+                      "surface-container-low": "#1a1c1c",
+                      "on-tertiary-container": "#a7a5a5",
+                      "on-secondary-fixed-variant": "#474747",
+                      "tertiary": "#c8c6c5",
+                      "surface-dim": "#121414",
+                      "surface-tint": "#e3bfad",
+                      "background": "#121414",
+                      "inverse-on-surface": "#2f3131",
+                      "inverse-primary": "#74584a",
+                      "surface-bright": "#383939",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#474646",
+                      "on-secondary": "#303030",
+                      "on-primary-container": "#c19f8e",
+                      "primary-fixed-dim": "#e3bfad",
+                      "secondary-fixed": "#e4e2e1",
+                      "surface-container": "#1e2020",
+                      "surface-container-lowest": "#0d0e0f",
+                      "on-primary-fixed": "#2a170c",
+                      "primary": "#e3bfad",
+                      "tertiary-container": "#3c3b3b",
+                      "on-secondary-container": "#b6b5b4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "container-max-width": "1280px",
+                      "base": "8px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Playfair Display"],
+                      "technical-label": ["JetBrains Mono"],
+                      "display-lg": ["Playfair Display"],
+                      "body-md": ["Hanken Grotesk"],
+                      "headline-lg": ["Playfair Display"],
+                      "technical-value": ["JetBrains Mono"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                      "technical-label": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                      "technical-value": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .industrial-grid {
+            background-image: linear-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px), linear-gradient(90deg, var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: center;
+        }
+        .leather-texture {
+            background-color: #121414;
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAI6P1VtK1ZierbgozUauMrIa13Ee58lsSpkd-pImKdlUqzNmEK878IjGT9FPXtyKw36jFqrr64oUbx8A7HzMMfMJfrHHTl5kqEnl-oWTaOlNxb59_WLjTwi3irbdBQ2FcGDx8hm0PpJDbIAeBiRBWbtdFSU2uPf_Jdz5WWH014RLeoNr1PeK6VY1eI7HOH-6MnaUjyHHuAIIQJG6nYjijjgfktt2SvsInAOQb3LsmF_jv2Gy6f_UvG5zcVZ-Ny1jkZbmXpWiksRgc);
+        }
+        .satin-glow {
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Technical Compass Elements */
+        .compass-ring {
+            position: absolute;
+            border: 1px solid rgba(156, 142, 136, 0.2);
+            border-radius: 100%;
+            pointer-events: none;
+            transition: transform 0.1s ease-out, opacity 0.3s ease-out;
+        }
+        .compass-center {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+<style data-stitch-cursor="">*{cursor:crosshair!important}[contenteditable="true"]:focus,.cursor-text:focus{cursor:text!important}</style>
+<style data-stitch-cursor="">*{cursor:crosshair!important}[contenteditable="true"]:focus,.cursor-text:focus{cursor:text!important}</style><style data-stitch-scroll-lock="">html,body{overflow:hidden!important}</style></head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-primary overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-surface border-b border-outline-variant z-50">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<div class="font-display-lg text-headline-lg text-primary tracking-tighter">Jônata Albuquerque</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-technical-label text-technical-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#blog">Blog</a>
+<a class="font-technical-label text-technical-label uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#experience">Experience</a>
+<div class="flex items-center space-x-2 mr-6 border-r border-outline-variant pr-6">
+<button class="font-technical-label text-[10px] text-primary hover:text-on-surface transition-colors font-bold">PT</button>
+<span class="text-outline-variant text-[10px]">|</span>
+<button class="font-technical-label text-[10px] text-on-surface-variant hover:text-on-surface transition-colors">EN</button>
+</div>
+<div class="flex items-center space-x-4 pl-4 border-l border-outline-variant">
+<button class="font-technical-label text-technical-label uppercase tracking-widest text-primary hover:underline underline-offset-4 cursor-pointer active:opacity-70">Resume <span class="material-symbols-outlined align-middle ml-1 text-sm">download</span></button>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-DEFAULT font-technical-label text-technical-label uppercase tracking-widest satin-glow hover:bg-primary-fixed hover:text-on-primary-fixed transition-all">Hire</button>
+</div>
+</nav>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden border-b border-outline-variant" id="hero">
+<div class="absolute inset-0 z-0 opacity-10 industrial-grid"></div>
+<!-- Animated Compass Background -->
+<div class="compass-center hidden lg:block z-0" id="compass-bg">
+<div class="compass-ring w-[600px] h-[600px] border-dashed" data-speed="0.2"></div>
+<div class="compass-ring w-[500px] h-[500px]" data-speed="-0.3">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 h-full w-[1px] bg-primary/20"></div>
+<div class="absolute top-1/2 left-0 -translate-y-1/2 w-full h-[1px] bg-primary/20"></div>
+</div>
+<div class="compass-ring w-[400px] h-[400px] border-2 border-primary/10" data-speed="0.5"></div>
+<div class="compass-ring w-[300px] h-[300px] border-dotted" data-speed="-0.1"></div>
+<div class="compass-ring w-[200px] h-[200px] bg-primary/5 blur-3xl" data-speed="0"></div>
+<!-- Technical labels -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full font-technical-label text-[10px] text-primary/40 uppercase tracking-tighter" data-speed="0.1">N // 0.00°</div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full font-technical-label text-[10px] text-primary/40 uppercase tracking-tighter" data-speed="0.1">S // 180.00°</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10 w-full grid lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 flex flex-col justify-center py-16">
+<div class="mb-6 flex items-center space-x-3">
+<span class="h-[1px] w-12 bg-primary"></span>
+<span class="font-technical-label text-technical-label text-primary uppercase tracking-[0.3em]">System Architect &amp; Backend Lead</span>
+</div>
+<h1 class="font-display-lg text-display-lg lg:text-[72px] lg:leading-[80px] mb-8 text-on-surface max-w-4xl drop-shadow-2xl">
+                Engenharia de Backend: <span class="text-primary italic">Escalabilidade</span>, Resiliência e Sistemas Críticos
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mb-12 leading-relaxed bg-surface/40 backdrop-blur-sm p-4 -ml-4 rounded-DEFAULT">
+                Especialista em ecossistemas Java e Cloud, com histórico na construção de sistemas de pagamento nacionais e integrações globais. Transformando requisitos complexos em arquiteturas distribuídas de alta performance.
+            </p>
+<div class="flex flex-wrap gap-8 mb-8 pb-8 border-b border-outline-variant/30">
+<a class="flex items-center space-x-2 group" href="#"><span class="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">link</span><span class="font-technical-label text-technical-label text-outline group-hover:text-primary transition-colors">LINKEDIN</span></a>
+<a class="flex items-center space-x-2 group" href="#"><span class="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">code</span><span class="font-technical-label text-technical-label text-outline group-hover:text-primary transition-colors">GITHUB</span></a>
+<a class="flex items-center space-x-2 group" href="#"><span class="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">rss_feed</span><span class="font-technical-label text-technical-label text-outline group-hover:text-primary transition-colors">SUBSTACK</span></a>
+<a class="flex items-center space-x-2 group" href="mailto:#"><span class="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">alternate_email</span><span class="font-technical-label text-technical-label text-outline group-hover:text-primary transition-colors">EMAIL</span></a>
+</div>
+<div class="flex flex-wrap gap-6 items-center">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-DEFAULT font-technical-label text-technical-label uppercase tracking-widest satin-glow hover:opacity-90 transition-all">
+                    Consultar Projetos
+                </button>
+<div class="flex items-center space-x-3 text-outline">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-technical-label text-technical-label">GCP ARCHITECT CERTIFIED</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 hidden lg:flex flex-col justify-end space-y-4 pb-20">
+
+</div>
+</div>
+</section>
+<!-- Infantaria Tech (Content) -->
+<section class="py-24 bg-surface relative" id="blog">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row items-baseline justify-between mb-16 space-y-4 md:space-y-0">
+<h2 class="font-display-lg text-display-lg">Infantaria Tech</h2>
+<div class="flex items-center space-x-4">
+<span class="font-technical-label text-technical-label text-outline uppercase">Engineering Diary</span>
+<div class="hidden md:block h-[1px] w-24 bg-outline-variant"></div>
+<a class="text-primary font-technical-label text-technical-label uppercase hover:underline" href="#">Substack Feed</a>
+</div>
+</div>
+<!-- Substack Subscription Iframe -->
+<div class="mb-20 flex justify-center">
+<div class="p-1 bg-outline-variant/30 rounded-DEFAULT satin-glow border border-outline-variant">
+<iframe class="grayscale hover:grayscale-0 transition-all duration-500" frameborder="0" height="320" scrolling="no" src="https://infantariatech.substack.com/embed" style="border: 1px solid var(--tw-colors-outline-variant); background: #121414" width="480"></iframe>
+</div>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<article class="p-8 border border-outline-variant bg-surface-container-lowest satin-glow flex flex-col h-full relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-5 pointer-events-none transition-transform group-hover:scale-110 duration-700">
+<span class="material-symbols-outlined text-[120px]">description</span>
+</div>
+<span class="font-technical-label text-technical-label text-primary mb-4 block">LOG_042 // 2024.10</span>
+<h3 class="font-headline-lg text-headline-lg mb-6 leading-tight group-hover:text-primary transition-colors">A Arte da Resiliência: Circuit Breakers além do óbvio.</h3>
+<p class="font-body-md text-on-surface-variant mb-8 flex-grow">Uma análise profunda sobre como configurar limiares de falha em sistemas que processam 10k+ tps sem degradar a experiência do usuário final.</p>
+<div class="pt-6 border-t border-outline-variant flex justify-between items-center">
+<span class="font-technical-value text-technical-value text-outline">8 MIN READ</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</div>
+</article>
+<article class="p-8 border border-outline-variant bg-surface-container-lowest satin-glow flex flex-col h-full relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-5 pointer-events-none transition-transform group-hover:scale-110 duration-700">
+<span class="material-symbols-outlined text-[120px]">hub</span>
+</div>
+<span class="font-technical-label text-technical-label text-primary mb-4 block">LOG_038 // 2024.08</span>
+<h3 class="font-headline-lg text-headline-lg mb-6 leading-tight group-hover:text-primary transition-colors">Event-Driven Architecture na Prática.</h3>
+<p class="font-body-md text-on-surface-variant mb-8 flex-grow">O dia que o Kafka salvou nossa Black Friday. Desafios de ordenação de mensagens e tratamento de erros em escala global.</p>
+<div class="pt-6 border-t border-outline-variant flex justify-between items-center">
+<span class="font-technical-value text-technical-value text-outline">12 MIN READ</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</div>
+</article>
+<article class="p-8 border border-outline-variant bg-surface-container-lowest satin-glow flex flex-col h-full relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-5 pointer-events-none transition-transform group-hover:scale-110 duration-700">
+<span class="material-symbols-outlined text-[120px]">architecture</span>
+</div>
+<span class="font-technical-label text-technical-label text-primary mb-4 block">LOG_035 // 2024.06</span>
+<h3 class="font-headline-lg text-headline-lg mb-6 leading-tight group-hover:text-primary transition-colors">Kubernetes for Backend Engineers.</h3>
+<p class="font-body-md text-on-surface-variant mb-8 flex-grow">Por que você deveria se importar com probes de liveness e readiness antes de escrever sua primeira linha de código no Controller.</p>
+<div class="pt-6 border-t border-outline-variant flex justify-between items-center">
+<span class="font-technical-value text-technical-value text-outline">10 MIN READ</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Engineering Cases -->
+<section class="py-24 border-y border-outline-variant relative overflow-hidden bg-surface-container-lowest" id="experience">
+<div class="absolute inset-0 z-0 opacity-5 industrial-grid"></div>
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-4">
+<div>
+<span class="font-technical-label text-technical-label text-primary uppercase tracking-widest block mb-4">Portfolio</span>
+<h2 class="font-display-lg text-display-lg">Engineering Cases</h2>
+</div>
+<div class="font-technical-value text-outline">SELECTED_WORKS_V24</div>
+</div>
+<div class="grid lg:grid-cols-2 gap-8">
+<!-- Case 1 -->
+<div class="group relative bg-surface border border-outline-variant overflow-hidden flex flex-col">
+<div class="aspect-video overflow-hidden">
+<img alt="Ecossistema PIX Architecture" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH79d11ZoWWUVGWAbq0VbzlYxOiIiT0-GLCWtUbVkmYeaU5SbjrD_KhGxFxcs71tOMnzhWMbC29AnUNWSfgCA8puhrQzEvqxQjUTbZHGr_As9KYag3N2QKXizFgPq2fc5iYf8aBjGfeypKvBn6D4MbOoEz6fQ9XCECuvZG0gIG1UTmI0hIYYjT9tnNKAQMb5odL0G3CuswaZovQAcK6e61yaj8FAK7aB0cyvAQis5-zipSpxUuqaAIpUQwQmZjxkvhYQA8a9umMTs">
+</div>
+<div class="p-8 flex-grow">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline-lg text-headline-lg">Ecossistema PIX (Inter)</h3>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">arrow_outward</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-8">Foco em alta disponibilidade e baixíssima latência para processamento de transações instantâneas. Implementação de padrões de resiliência e monitoramento crítico.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant">Latency Control</span>
+<span class="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant">Spring WebFlux</span>
+<span class="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant">Resilience4j</span>
+</div>
+</div>
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 font-technical-label text-[10px] text-on-primary">CASE_01</div>
+</div>
+<!-- Case 2 -->
+<div class="group relative bg-surface border border-outline-variant overflow-hidden flex flex-col">
+<div class="aspect-video overflow-hidden">
+<img alt="Global Integrations" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBobrLVP6pGa0GtkgVvJLNnV5LshLrC8D_u-e4r55D6cNShvTpqQfkkpH3mlVNLv79YXdXElJnAlwSn5z6IYdd7FpXUlLh3qPY1Fnjr0Aqf-PciewPMkA34O-Pwky6QmVLdCQHBaTT0iE9WCcDh_OQdsVKzalUCBs3nLR2TLFVXoO8az6dYB29sb2sCxckhY01FQpbSM3r1X1S1n4QWnxWOwkulYRhnq_k0C5tAou7hoc0dOMZdkDlMEzWtYoPAYS-fc2VFxr8rdnM">
+</div>
+<div class="p-8 flex-grow">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline-lg text-headline-lg">Integrações Globais (Equifax)</h3>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">arrow_outward</span>
+</div>
+<p class="font-body-md text-on-surface-variant mb-8">Arquitetura de sistemas distribuídos para sincronização de dados transcontinentais. Orquestração de mensageria complexa e conformidade com padrões globais de segurança.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant">GCP Pub/Sub</span>
+<span class="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant">Multi-region</span>
+<span class="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant">Distributed Tracing</span>
+</div>
+</div>
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 font-technical-label text-[10px] text-on-primary">CASE_02</div>
+</div>
+<!-- GH Project 1 -->
+<div class="p-8 bg-surface-container border border-outline-variant hover:border-primary/50 transition-all group">
+<div class="flex items-center space-x-2 text-outline mb-6">
+<span class="material-symbols-outlined text-sm">terminal</span>
+<span class="font-technical-label text-technical-label">GITHUB_REPO / ARCH_PATTERNS</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-on-surface group-hover:text-primary transition-colors">Microservices Blueprint</h3>
+<p class="font-body-md text-on-surface-variant mb-8">Estrutura base para serviços escaláveis com Spring Boot 3, utilizando Clean Architecture e observabilidade nativa.</p>
+<a class="font-technical-label text-technical-label text-primary uppercase flex items-center hover:underline" href="#">
+                    View Source <span class="material-symbols-outlined ml-2 text-sm">code</span>
+</a>
+</div>
+<!-- GH Project 2 -->
+<div class="p-8 bg-surface-container border border-outline-variant hover:border-primary/50 transition-all group">
+<div class="flex items-center space-x-2 text-outline mb-6">
+<span class="material-symbols-outlined text-sm">terminal</span>
+<span class="font-technical-label text-technical-label">GITHUB_REPO / K8S_STACK</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-on-surface group-hover:text-primary transition-colors">Kubernetes Hardening</h3>
+<p class="font-body-md text-on-surface-variant mb-8">Manifestos e configurações de segurança para clusters produtivos, focando em Network Policies e Resource Quotas.</p>
+<a class="font-technical-label text-technical-label text-primary uppercase flex items-center hover:underline" href="#">
+                    View Source <span class="material-symbols-outlined ml-2 text-sm">code</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<!-- Brand & Info -->
+<div class="space-y-6 md:w-1/2">
+<div class="font-technical-label text-technical-label text-primary tracking-tighter text-xl uppercase">
+                    CORE_SYSTEMS_OPERATIONS
+                </div>
+<div class="font-technical-label text-technical-label text-outline leading-relaxed">
+                    JÔNATA ALBUQUERQUE FERREIRA // <span class="text-on-surface">BACKEND_ARCH_V1.0</span><br>
+                    ESTABLISHED 2024. ALL RIGHTS RESERVED.
+                </div>
+<div class="flex items-center space-x-3 text-primary bg-primary-container/20 px-4 py-2 border border-primary/20 inline-flex">
+<span class="material-symbols-outlined text-sm animate-pulse" style="font-variation-settings: &quot;FILL&quot; 1;">terminal</span>
+<span class="font-technical-label text-technical-label">SYSTEMS_HEALTH: OPTIMAL</span>
+</div>
+</div>
+<!-- Links & Secondary Info -->
+<div class="flex flex-col md:flex-row items-start md:items-center md:space-x-16 gap-8 md:w-1/2 justify-end">
+<div class="flex flex-col space-y-4 font-technical-value text-technical-value">
+<span class="font-technical-label text-[10px] text-outline uppercase tracking-[0.2em] mb-2">Connect</span>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline decoration-primary underline-offset-8" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline decoration-primary underline-offset-8" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline decoration-primary underline-offset-8" href="#">Substack</a>
+</div>
+<div class="flex flex-col space-y-4 font-technical-value text-technical-value">
+<span class="font-technical-label text-[10px] text-outline uppercase tracking-[0.2em] mb-2">Navigation</span>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#hero">Back to Top</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#blog">Latest Logs</a>
+<a class="text-on-surface-variant hover:text-primary transition-all duration-200" href="#experience">Case Studies</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Scroll animation for hero background elements
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const rings = document.querySelectorAll('.compass-ring, [data-speed]');
+        const heroHeight = document.getElementById('hero').offsetHeight;
+        
+        if (scrollPosition < heroHeight + 200) {
+            rings.forEach(ring => {
+                const speed = parseFloat(ring.getAttribute('data-speed')) || 0;
+                const rotation = scrollPosition * speed * 0.5;
+                const translateY = scrollPosition * 0.2;
+                const opacity = 1 - (scrollPosition / (heroHeight * 0.8));
+                
+                ring.style.transform = `rotate(${rotation}deg) translateY(${translateY}px) scale(${1 + scrollPosition/2000})`;
+                ring.style.opacity = Math.max(0, opacity);
+            });
+        }
+    });
+</script>
+
+
+</body></html>
