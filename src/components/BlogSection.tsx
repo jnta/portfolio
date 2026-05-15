@@ -35,11 +35,13 @@ export default function BlogSection() {
             ></iframe>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
+        <div className="grid lg:grid-cols-12 gap-8">
+          {blogPosts.map((post, index) => (
             <article
               key={post.id}
-              className="p-8 border border-outline-variant bg-surface-container-lowest satin-glow flex flex-col h-full relative overflow-hidden group"
+              className={`p-8 border border-outline-variant bg-surface-container-lowest satin-glow flex flex-col h-full relative overflow-hidden group ${
+                index === 0 ? "lg:col-span-12 lg:p-12" : "lg:col-span-6"
+              }`}
             >
               <div className="absolute -right-4 -top-4 opacity-5 pointer-events-none transition-transform group-hover:scale-110 duration-700">
                 <span className="material-symbols-outlined text-[120px]">
@@ -49,10 +51,14 @@ export default function BlogSection() {
               <span className="font-technical-label text-technical-label text-primary mb-4 block">
                 {post.id} {"//"} {post.date}
               </span>
-              <h3 className="font-headline-lg text-headline-lg mb-6 leading-tight group-hover:text-primary transition-colors">
+              <h3 className={`font-headline-lg text-headline-lg mb-6 leading-tight group-hover:text-primary transition-colors ${
+                index === 0 ? "lg:text-[40px] lg:leading-tight lg:max-w-3xl" : ""
+              }`}>
                 {post.title}
               </h3>
-              <p className="font-body-md text-on-surface-variant mb-8 flex-grow">
+              <p className={`font-body-md text-on-surface-variant mb-8 flex-grow ${
+                index === 0 ? "lg:max-w-2xl lg:text-lg" : ""
+              }`}>
                 {post.description}
               </p>
               <div className="pt-6 border-t border-outline-variant flex justify-between items-center">
