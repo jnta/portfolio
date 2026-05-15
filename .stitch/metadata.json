@@ -1,0 +1,33 @@
+{
+  "name": "projects/5131587722735790161",
+  "projectId": "5131587722735790161",
+  "title": "Jônata Albuquerque: Portfólio Executivo",
+  "visibility": "PRIVATE",
+  "createTime": "2026-05-15T21:00:01.094973Z",
+  "updateTime": "2026-05-15T22:25:37.441229Z",
+  "projectType": "TEXT_TO_UI_PRO",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "DARK",
+    "font": "PLAYFAIR_DISPLAY",
+    "customColor": "#3d2b1f"
+  },
+  "screens": {
+    "hero": {
+      "id": "66f12e5a6f6d4c1695faf2f3e1e75fae",
+      "sourceScreen": "projects/5131587722735790161/screens/66f12e5a6f6d4c1695faf2f3e1e75fae",
+      "x": 3802,
+      "y": 4067,
+      "width": 1280,
+      "height": 3676
+    },
+    "about": {
+      "id": "38c5e12cf434474e8446abe236c8f279",
+      "sourceScreen": "projects/5131587722735790161/screens/38c5e12cf434474e8446abe236c8f279"
+    }
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}
