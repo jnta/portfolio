@@ -45,12 +45,17 @@ export default function TopNavBar() {
             </button>
           </div>
           <div className="flex items-center space-x-4 pl-4 border-l border-outline-variant">
-            <button className="font-technical-label text-technical-label uppercase tracking-widest text-primary hover:underline underline-offset-4 cursor-pointer active:opacity-70">
+            <a
+              href={`/resume?lang=${language}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-technical-label text-technical-label uppercase tracking-widest text-primary hover:underline underline-offset-4 cursor-pointer active:opacity-70"
+            >
               {t.topNav.resume}{" "}
               <span className="material-symbols-outlined align-middle ml-1 text-sm">
                 download
               </span>
-            </button>
+            </a>
           </div>
         </nav>
         <button
@@ -100,10 +105,15 @@ export default function TopNavBar() {
             </button>
           </div>
           <div className="pt-2">
-            <button className="font-technical-label text-xs uppercase tracking-widest text-primary flex items-center gap-1 hover:underline underline-offset-4 cursor-pointer">
+            <a
+              href={`/resume?lang=${language}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-technical-label text-xs uppercase tracking-widest text-primary flex items-center gap-1 hover:underline underline-offset-4 cursor-pointer"
+            >
               {t.topNav.resume}{" "}
               <span className="material-symbols-outlined text-sm">download</span>
-            </button>
+            </a>
           </div>
         </div>
       )}
