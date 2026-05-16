@@ -87,23 +87,14 @@ export const translations = {
         techStack: ["Java 21/17", "TypeScript", "Micronaut", "Spring Boot", "React", "Kafka", "PostgreSQL", "AWS (EKS, MSK, RDS, S3)", "OpenTelemetry", "Docker", "Kubernetes", "Terraform", "GitOps", "ArgoCD", "Micronaut Data"],
       },
       {
-        id: "EXP_02",
+        id: "EXP_01",
         company: "Sea Solutions",
         role: "Software Engineer",
-        period: "outubro de 2023 - maio de 2024 (8 meses)",
+        period: "outubro de 2022 - maio de 2024 (1 ano e 7 meses)",
         location: "Brasília, Distrito Federal, Brasil",
         description:
           "Liderei o desenvolvimento ponta a ponta de uma plataforma SaaS proprietária no setor de saúde, supervisionando a arquitetura da solução, documentação e implementação para entregar um produto escalável e robusto.\n- Desenvolvi e mantive RESTful APIs robustas utilizando Java e Spring Boot.\n- Implementei novas funcionalidades e otimizei serviços existentes.\n- Realizei o deploy e a operação de serviços no GCP utilizando Cloud Run e Pub/Sub.\n- Trabalhei extensivamente com sistemas de mensageria (Kafka, RabbitMQ).",
-        techStack: ["Java 17/8", "Python", "Spring Boot", "JUnit", "Testcontainers", "Kafka", "RabbitMQ", "Google Pub/Sub", "PostgreSQL", "SQL Server", "GCP", "Cloud Run", "Grafana", "Docker"],
-      },
-      {
-        id: "EXP_01",
-        company: "Sea Solutions",
-        role: "Junior Software Engineer",
-        period: "outubro de 2022 - outubro de 2023 (1 ano e 1 mês)",
-        description:
-          "Atuei no ciclo de vida completo de projetos, desde a concepção até o deploy em produção, colaborando ativamente com clientes para garantir o alinhamento com os requisitos de negócio.\n- Desenvolvi e mantive RESTful APIs robustas utilizando Java e Spring Boot.\n- Integrei múltiplos serviços por meio de comunicação síncrona e assíncrona com Kafka.\n- Implementei e mantive pipelines de CI/CD utilizando GitLab.\n- Utilizei Spring Data, Hibernate e PostgreSQL para persistência de dados.",
-        techStack: ["Java 17/11/8", "Spring Boot", "Kafka", "PostgreSQL", "Azure", "Grafana", "Prometheus", "GitLab CI/CD", "Docker", "Hibernate"],
+        techStack: ["Java 17/11/8", "Python", "Spring Boot", "Hibernate", "JUnit", "Testcontainers", "Kafka", "RabbitMQ", "Google Pub/Sub", "PostgreSQL", "SQL Server", "GCP", "Azure", "Cloud Run", "Docker", "GitLab CI/CD", "Grafana", "Prometheus"],
       },
     ],
     academicTimeline: [
@@ -245,23 +236,14 @@ export const translations = {
         techStack: ["Java 21/17", "TypeScript", "Micronaut", "Spring Boot", "React", "Kafka", "PostgreSQL", "AWS (EKS, MSK, RDS, S3)", "OpenTelemetry", "Docker", "Kubernetes", "Terraform", "GitOps", "ArgoCD", "Micronaut Data"],
       },
       {
-        id: "EXP_02",
+        id: "EXP_01",
         company: "Sea Solutions",
         role: "Software Engineer",
-        period: "October 2023 - May 2024 (8 months)",
+        period: "October 2022 - May 2024 (1 year 7 months)",
         location: "Brasília, Federal District, Brazil",
         description:
           "Led the end-to-end development of a proprietary SaaS platform in the healthcare sector, overseeing solution architecture, documentation, and implementation to deliver a scalable and robust product.\n- Developed and maintained robust RESTful APIs using Java and Spring Boot.\n- Implemented new features and optimized existing services.\n- Deployed and operated services on GCP using Cloud Run and Pub/Sub.\n- Worked extensively with messaging systems (Kafka, RabbitMQ).",
-        techStack: ["Java 17/8", "Python", "Spring Boot", "JUnit", "Testcontainers", "Kafka", "RabbitMQ", "Google Pub/Sub", "PostgreSQL", "SQL Server", "GCP", "Cloud Run", "Grafana", "Docker"],
-      },
-      {
-        id: "EXP_01",
-        company: "Sea Solutions",
-        role: "Junior Software Engineer",
-        period: "October 2022 - October 2023 (1 year 1 month)",
-        description:
-          "Participated in the full project lifecycle, from conception to production deploy, actively collaborating with clients to ensure alignment with business requirements.\n- Developed and maintained robust RESTful APIs using Java and Spring Boot.\n- Integrated multiple services through synchronous and asynchronous communication with Kafka.\n- Implemented and maintained CI/CD pipelines using GitLab.\n- Utilized Spring Data, Hibernate, and PostgreSQL for data persistence.",
-        techStack: ["Java 17/11/8", "Spring Boot", "Kafka", "PostgreSQL", "Azure", "Grafana", "Prometheus", "GitLab CI/CD", "Docker", "Hibernate"],
+        techStack: ["Java 17/11/8", "Python", "Spring Boot", "Hibernate", "JUnit", "Testcontainers", "Kafka", "RabbitMQ", "Google Pub/Sub", "PostgreSQL", "SQL Server", "GCP", "Azure", "Cloud Run", "Docker", "GitLab CI/CD", "Grafana", "Prometheus"],
       },
     ],
     academicTimeline: [
