@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import { navLinks } from "@/data/mockData";
 
 export default function TopNavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="w-full top-0 sticky bg-surface border-b border-outline-variant z-50">
       <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
@@ -35,10 +40,46 @@ export default function TopNavBar() {
             </button>
           </div>
         </nav>
-        <button className="md:hidden text-primary">
-          <span className="material-symbols-outlined">menu</span>
+        <button
+          className="md:hidden text-primary p-2"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
+        >
+          <span className="material-symbols-outlined">{isOpen ? "close" : "menu"}</span>
         </button>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isOpen && (
+        <div className="md:hidden bg-surface border-b border-outline-variant px-margin-mobile py-6 flex flex-col space-y-6">
+          {navLinks.map((link) => (
+            <a
+              key={link.label}
+              className="font-technical-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300"
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </a>
+          ))}
+          <div className="flex items-center space-x-4 pt-4 border-t border-outline-variant">
+            <button className="font-technical-label text-xs text-primary font-bold">
+              PT
+            </button>
+            <span className="text-outline-variant text-xs">|</span>
+            <button className="font-technical-label text-xs text-on-surface-variant">
+              EN
+            </button>
+          </div>
+          <div className="pt-2">
+            <button className="font-technical-label text-xs uppercase tracking-widest text-primary flex items-center gap-1 hover:underline underline-offset-4 cursor-pointer">
+              Resume{" "}
+              <span className="material-symbols-outlined text-sm">download</span>
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
+
