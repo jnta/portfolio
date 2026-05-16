@@ -19,7 +19,7 @@ const hanken = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Jônata Albuquerque Ferreira | Software Engineer",
+  title: "Jônata Albuquerque | Software Engineer",
   description: "Engenharia de Backend: Escalabilidade, Resiliência e Sistemas Críticos",
 };
 

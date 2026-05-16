@@ -19,8 +19,16 @@ function ResumeContent() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-gray-200">
-      <div className="max-w-4xl mx-auto px-8 py-12 print:p-0 print:max-w-none">
+    <>
+      <style dangerouslySetInnerHTML={{ __html: `
+        @media print {
+          @page {
+            margin: 0;
+          }
+        }
+      `}} />
+      <div className="min-h-screen bg-white text-black font-sans selection:bg-gray-200">
+        <div className="max-w-4xl mx-auto px-8 py-12 print:p-16 print:max-w-none">
         
         {/* Header */}
         <header className="mb-8 border-b-2 border-black pb-6 flex justify-between items-end gap-4">
@@ -99,6 +107,7 @@ function ResumeContent() {
 
       </div>
     </div>
+    </>
   );
 }
 
