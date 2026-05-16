@@ -97,20 +97,24 @@ export default function AnimatedHero() {
             {t.heroData.description}
           </p>
           <div className="flex flex-wrap gap-8 mb-8 pb-8 border-b border-outline-variant/30">
-            {t.heroData.links.map((link) => (
-              <a
-                key={link.label}
-                className="flex items-center space-x-2 group"
-                href={link.href}
-              >
-                <span className="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">
-                  {link.icon}
-                </span>
-                <span className="font-technical-label text-technical-label text-outline group-hover:text-primary transition-colors">
-                  {link.label}
-                </span>
-              </a>
-            ))}
+            {t.heroData.links.map((link) => {
+              const isEmail = link.href === "#email";
+              return (
+                <a
+                  key={link.label}
+                  className="flex items-center space-x-2 group"
+                  href={link.href}
+                  {...(!isEmail ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
+                  <span className="material-symbols-outlined text-[18px] text-primary group-hover:scale-110 transition-transform">
+                    {link.icon}
+                  </span>
+                  <span className="font-technical-label text-technical-label text-outline group-hover:text-primary transition-colors">
+                    {link.label}
+                  </span>
+                </a>
+              );
+            })}
           </div>
         </div>
         <div className="lg:col-span-4 hidden lg:flex flex-col justify-end space-y-4 pb-20"></div>

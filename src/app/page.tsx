@@ -3,6 +3,7 @@ import AnimatedHero from "@/components/AnimatedHero";
 import BlogSection from "@/components/BlogSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import Footer from "@/components/Footer";
+import EmailModal from "@/components/EmailModal";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <ExperienceSection />
       </main>
       <Footer />
+      <EmailModal />
     </>
   );
 }

@@ -19,9 +19,9 @@ export const translations = {
       description:
         "Engenheiro de software especializado em ecossistemas Java e Cloud. Atuei na construção de core banking para pagamentos instantâneos em tempo real e em integrações de sistemas de larga escala entre múltiplos países. Focado em performance, resiliência e entrega de código de missão crítica.",
       links: [
-        { label: "LINKEDIN", href: "#", icon: "link" },
-        { label: "GITHUB", href: "#", icon: "code" },
-        { label: "EMAIL", href: "mailto:#", icon: "alternate_email" },
+        { label: "LINKEDIN", href: "https://www.linkedin.com/in/jonataalbuquerque/?locale=pt-BR", icon: "link" },
+        { label: "GITHUB", href: "https://github.com/jnta", icon: "code" },
+        { label: "EMAIL", href: "#email", icon: "alternate_email" },
       ],
       primaryAction: "Consultar Projetos",
       certification: "GCP ARCHITECT CERTIFIED",
@@ -147,9 +147,9 @@ export const translations = {
       infoLine2: `CRIADO EM ${new Date().getFullYear()}. TODOS OS DIREITOS RESERVADOS.`,
       systemStatus: "SYSTEMS_HEALTH: OPTIMAL",
       connectLinks: [
-        { label: "LinkedIn", href: "#" },
-        { label: "GitHub", href: "#" },
-        { label: "Email", href: "mailto:#" },
+        { label: "LinkedIn", href: "https://www.linkedin.com/in/jonataalbuquerque/?locale=pt-BR" },
+        { label: "GitHub", href: "https://github.com/jnta" },
+        { label: "Email", href: "#email" },
       ],
       navLinks: [
         { label: "Sobre", href: "#hero" },
@@ -177,9 +177,9 @@ export const translations = {
       description:
         "Software engineer specializing in Java and Cloud ecosystems. I have worked on building core banking for real-time instant payments and large-scale system integrations across multiple countries. Focused on performance, resilience, and delivering mission-critical code.",
       links: [
-        { label: "LINKEDIN", href: "#", icon: "link" },
-        { label: "GITHUB", href: "#", icon: "code" },
-        { label: "EMAIL", href: "mailto:#", icon: "alternate_email" },
+        { label: "LINKEDIN", href: "https://www.linkedin.com/in/jonataalbuquerque/?locale=en-US", icon: "link" },
+        { label: "GITHUB", href: "https://github.com/jnta", icon: "code" },
+        { label: "EMAIL", href: "#email", icon: "alternate_email" },
       ],
       primaryAction: "View Projects",
       certification: "GCP ARCHITECT CERTIFIED",
@@ -305,9 +305,9 @@ export const translations = {
       infoLine2: `ESTABLISHED ${new Date().getFullYear()}. ALL RIGHTS RESERVED.`,
       systemStatus: "SYSTEMS_HEALTH: OPTIMAL",
       connectLinks: [
-        { label: "LinkedIn", href: "#" },
-        { label: "GitHub", href: "#" },
-        { label: "Email", href: "mailto:#" },
+        { label: "LinkedIn", href: "https://www.linkedin.com/in/jonataalbuquerque/?locale=en-US" },
+        { label: "GitHub", href: "https://github.com/jnta" },
+        { label: "Email", href: "#email" },
       ],
       navLinks: [
         { label: "About", href: "#hero" },

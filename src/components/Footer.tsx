@@ -38,15 +38,19 @@ export default function Footer() {
               <span className="font-technical-label text-[10px] text-outline uppercase tracking-[0.2em] mb-2">
                 {t.footerSection.connect}
               </span>
-              {t.footerData.connectLinks.map((link) => (
-                <a
-                  key={link.label}
-                  className="text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline decoration-primary underline-offset-8"
-                  href={link.href}
-                >
-                  {link.label}
-                </a>
-              ))}
+              {t.footerData.connectLinks.map((link) => {
+                const isEmail = link.href === "#email";
+                return (
+                  <a
+                    key={link.label}
+                    className="text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline decoration-primary underline-offset-8"
+                    href={link.href}
+                    {...(!isEmail ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  >
+                    {link.label}
+                  </a>
+                );
+              })}
             </div>
             <div className="flex flex-col space-y-4 font-technical-value text-technical-value">
               <span className="font-technical-label text-[10px] text-outline uppercase tracking-[0.2em] mb-2">
