@@ -1,6 +1,12 @@
-import { careerTimeline, academicTimeline, githubProjects } from "@/data/mockData";
+"use client";
+
+import { translations } from "@/data/mockData";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ExperienceSection() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section
       className="py-24 border-y border-outline-variant relative overflow-hidden bg-surface-container-lowest"
@@ -11,9 +17,9 @@ export default function ExperienceSection() {
         <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-4">
           <div>
             <span className="font-technical-label text-technical-label text-primary uppercase tracking-widest block mb-4">
-              Career Timeline
+              {t.experienceSection.careerTimeline}
             </span>
-            <h2 className="font-display-lg text-4xl md:text-5xl">Experience</h2>
+            <h2 className="font-display-lg text-4xl md:text-5xl">{t.experienceSection.experience}</h2>
           </div>
           <div className="font-technical-value text-outline">
             SYS_RECORD_V26
@@ -22,11 +28,9 @@ export default function ExperienceSection() {
 
         <div className="mb-24">
           <div className="relative border-l border-outline-variant ml-2 md:ml-4 space-y-16 pb-8">
-            {careerTimeline.map((item) => (
+            {t.careerTimeline.map((item) => (
               <div key={item.id} className="relative pl-8 md:pl-16 group">
-                {/* Node dot */}
                 <div className="absolute w-3 h-3 bg-surface border-2 border-primary -left-[6.5px] top-2 transition-colors group-hover:bg-primary"></div>
-                {/* Line extension on hover (optional tech detail) */}
                 <div className="absolute w-8 h-[1px] bg-primary/0 group-hover:bg-primary/50 top-[13px] left-0 transition-colors hidden md:block"></div>
                 
                 <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 mb-2">
@@ -64,11 +68,11 @@ export default function ExperienceSection() {
 
         <div className="mb-24">
           <div className="flex items-center space-x-4 mb-12">
-            <h3 className="font-display-lg text-3xl md:text-4xl text-on-surface">Academic</h3>
+            <h3 className="font-display-lg text-3xl md:text-4xl text-on-surface">{t.experienceSection.academic}</h3>
             <div className="h-[1px] flex-grow bg-outline-variant/50"></div>
           </div>
           <div className="relative border-l border-outline-variant ml-2 md:ml-4 space-y-12 pb-8">
-            {academicTimeline.map((item) => (
+            {t.academicTimeline.map((item) => (
               <div key={item.id} className="relative pl-8 md:pl-16 group">
                 <div className="absolute w-3 h-3 bg-surface border-2 border-outline -left-[6.5px] top-2 transition-colors group-hover:border-primary"></div>
                 
@@ -88,11 +92,11 @@ export default function ExperienceSection() {
 
         <div id="open-source">
           <div className="flex items-center space-x-4 mb-8">
-            <h3 className="font-display-lg text-3xl md:text-4xl text-on-surface">Open Source</h3>
+            <h3 className="font-display-lg text-3xl md:text-4xl text-on-surface">{t.experienceSection.openSource}</h3>
             <div className="h-[1px] flex-grow bg-outline-variant/50"></div>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {githubProjects.map((project) => (
+            {t.githubProjects.map((project) => (
               <div
                 key={project.id}
                 className="p-8 bg-surface-container border border-outline-variant hover:border-primary/50 transition-all group"
@@ -115,7 +119,7 @@ export default function ExperienceSection() {
                   className="font-technical-label text-technical-label text-primary uppercase flex items-center hover:underline"
                   href={project.href}
                 >
-                  View Source{" "}
+                  {t.experienceSection.viewSource}{" "}
                   <span className="material-symbols-outlined ml-2 text-sm">
                     code
                   </span>

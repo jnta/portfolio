@@ -1,9 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
-import { heroData } from "@/data/mockData";
+import { translations } from "@/data/mockData";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function AnimatedHero() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -79,21 +83,21 @@ export default function AnimatedHero() {
           <div className="mb-6 flex items-center space-x-3">
             <span className="h-[1px] w-12 bg-primary"></span>
             <span className="font-technical-label text-technical-label text-primary uppercase tracking-[0.3em]">
-              {heroData.roleLabel}
+              {t.heroData.roleLabel}
             </span>
           </div>
           <h1 className="font-display-lg text-4xl md:text-5xl lg:text-6xl lg:leading-tight mb-6 text-on-surface max-w-3xl drop-shadow-2xl">
-            {heroData.titlePart1}
+            {t.heroData.titlePart1}
             <span className="text-primary italic">
-              {heroData.titleHighlight}
+              {t.heroData.titleHighlight}
             </span>
-            {heroData.titlePart2}
+            {t.heroData.titlePart2}
           </h1>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mb-12 leading-relaxed bg-surface/40 backdrop-blur-sm p-4 -ml-4 rounded-DEFAULT">
-            {heroData.description}
+            {t.heroData.description}
           </p>
           <div className="flex flex-wrap gap-8 mb-8 pb-8 border-b border-outline-variant/30">
-            {heroData.links.map((link) => (
+            {t.heroData.links.map((link) => (
               <a
                 key={link.label}
                 className="flex items-center space-x-2 group"
@@ -108,7 +112,6 @@ export default function AnimatedHero() {
               </a>
             ))}
           </div>
-
         </div>
         <div className="lg:col-span-4 hidden lg:flex flex-col justify-end space-y-4 pb-20"></div>
       </div>

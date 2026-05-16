@@ -1,21 +1,27 @@
-import { blogPosts } from "@/data/mockData";
+"use client";
+
+import { translations } from "@/data/mockData";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function BlogSection() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section className="py-24 bg-surface relative" id="blog">
       <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="flex flex-col md:flex-row items-baseline justify-between mb-16 space-y-4 md:space-y-0">
-          <h2 className="font-display-lg text-4xl md:text-5xl">Infantaria Tech</h2>
+          <h2 className="font-display-lg text-4xl md:text-5xl">{t.blogSection.title}</h2>
           <div className="flex items-center space-x-4">
             <span className="font-technical-label text-technical-label text-outline uppercase">
-              Engineering Diary
+              {t.blogSection.subtitle}
             </span>
             <div className="hidden md:block h-[1px] w-24 bg-outline-variant"></div>
             <a
               className="text-primary font-technical-label text-technical-label uppercase hover:underline"
               href="#"
             >
-              Substack Feed
+              {t.blogSection.substackFeed}
             </a>
           </div>
         </div>
@@ -36,7 +42,7 @@ export default function BlogSection() {
           </div>
         </div>
         <div className="grid lg:grid-cols-12 gap-8">
-          {blogPosts.map((post, index) => (
+          {t.blogPosts.map((post, index) => (
             <article
               key={post.id}
               className={`p-8 border border-outline-variant bg-surface-container-lowest satin-glow flex flex-col h-full relative overflow-hidden group ${

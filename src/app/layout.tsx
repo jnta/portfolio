@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, JetBrains_Mono, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -38,7 +39,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }
