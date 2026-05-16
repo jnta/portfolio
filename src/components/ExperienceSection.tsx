@@ -1,4 +1,4 @@
-import { experienceCases, githubProjects } from "@/data/mockData";
+import { careerTimeline, academicTimeline, githubProjects } from "@/data/mockData";
 
 export default function ExperienceSection() {
   return (
@@ -11,58 +11,79 @@ export default function ExperienceSection() {
         <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-16 gap-4">
           <div>
             <span className="font-technical-label text-technical-label text-primary uppercase tracking-widest block mb-4">
-              Portfolio
+              Career Timeline
             </span>
-            <h2 className="font-display-lg text-4xl md:text-5xl">Engineering Cases</h2>
+            <h2 className="font-display-lg text-4xl md:text-5xl">Experience</h2>
           </div>
           <div className="font-technical-value text-outline">
-            SELECTED_WORKS_V24
+            SYS_RECORD_V26
           </div>
         </div>
-        <div className="flex flex-col gap-16 mb-24">
-          {experienceCases.map((caseItem, index) => (
-            <div
-              key={caseItem.id}
-              className={`group relative bg-surface border border-outline-variant overflow-hidden flex flex-col ${
-                index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-              }`}
-            >
-              <div className="lg:w-3/5 aspect-video lg:aspect-auto overflow-hidden relative min-h-[300px]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  alt={caseItem.title}
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                  src={caseItem.image}
-                />
-              </div>
-              <div className="p-8 lg:p-12 lg:w-2/5 flex flex-col justify-center flex-grow">
-                <div className="flex justify-between items-start mb-6">
-                  <h3 className="font-headline-lg text-2xl md:text-3xl">
-                    {caseItem.title}
+
+        <div className="mb-24">
+          <div className="relative border-l border-outline-variant ml-2 md:ml-4 space-y-16 pb-8">
+            {careerTimeline.map((item) => (
+              <div key={item.id} className="relative pl-8 md:pl-16 group">
+                {/* Node dot */}
+                <div className="absolute w-3 h-3 bg-surface border-2 border-primary -left-[6.5px] top-2 transition-colors group-hover:bg-primary"></div>
+                {/* Line extension on hover (optional tech detail) */}
+                <div className="absolute w-8 h-[1px] bg-primary/0 group-hover:bg-primary/50 top-[13px] left-0 transition-colors hidden md:block"></div>
+                
+                <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 mb-2">
+                  <h3 className="font-headline-lg text-2xl md:text-3xl text-on-surface">
+                    {item.company}
                   </h3>
-                  <span className="material-symbols-outlined text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
-                    arrow_outward
+                  <span className="font-technical-label text-primary uppercase tracking-wider text-sm">
+                    {item.role}
                   </span>
                 </div>
-                <p className="font-body-md text-on-surface-variant mb-8">
-                  {caseItem.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {caseItem.tags.map((tag) => (
+                
+                <div className="font-technical-value text-outline text-sm mb-6 flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[16px]">schedule</span>
+                  {item.period}
+                </div>
+                
+                <div className="font-body-md text-on-surface-variant mb-8 whitespace-pre-line max-w-4xl">
+                  {item.description}
+                </div>
+                
+                <div className="flex flex-wrap gap-2 max-w-4xl">
+                  {item.techStack.map((tech) => (
                     <span
-                      key={tag}
-                      className="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant"
+                      key={tech}
+                      className="px-3 py-1 bg-surface-container font-technical-label text-[10px] uppercase border border-outline-variant text-on-surface hover:border-primary/50 transition-colors"
                     >
-                      {tag}
+                      {tech}
                     </span>
                   ))}
                 </div>
               </div>
-              <div className="absolute top-4 left-4 bg-primary px-3 py-1 font-technical-label text-[10px] text-on-primary">
-                {caseItem.id}
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-24">
+          <div className="flex items-center space-x-4 mb-12">
+            <h3 className="font-display-lg text-3xl md:text-4xl text-on-surface">Academic</h3>
+            <div className="h-[1px] flex-grow bg-outline-variant/50"></div>
+          </div>
+          <div className="relative border-l border-outline-variant ml-2 md:ml-4 space-y-12 pb-8">
+            {academicTimeline.map((item) => (
+              <div key={item.id} className="relative pl-8 md:pl-16 group">
+                <div className="absolute w-3 h-3 bg-surface border-2 border-outline -left-[6.5px] top-2 transition-colors group-hover:border-primary"></div>
+                
+                <h3 className="font-headline-lg text-xl md:text-2xl text-on-surface mb-2">
+                  {item.institution}
+                </h3>
+                <div className="font-body-md text-on-surface-variant mb-3">
+                  {item.course}
+                </div>
+                <div className="font-technical-value text-outline text-sm">
+                  {item.period}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div id="open-source">

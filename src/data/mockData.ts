@@ -51,25 +51,59 @@ export const blogPosts = [
   },
 ];
 
-export const experienceCases = [
+export const careerTimeline = [
   {
-    id: "CASE_01",
-    title: "Ecossistema PIX (Inter)",
+    id: "EXP_04",
+    company: "Equifax",
+    role: "Software Engineer",
+    period: "dezembro de 2025 - Present (6 meses)",
     description:
-      "Foco em alta disponibilidade e baixíssima latência para processamento de transações instantâneas. Implementação de padrões de resiliência e monitoramento crítico.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBH79d11ZoWWUVGWAbq0VbzlYxOiIiT0-GLCWtUbVkmYeaU5SbjrD_KhGxFxcs71tOMnzhWMbC29AnUNWSfgCA8puhrQzEvqxQjUTbZHGr_As9KYag3N2QKXizFgPq2fc5iYf8aBjGfeypKvBn6D4MbOoEz6fQ9XCECuvZG0gIG1UTmI0hIYYjT9tnNKAQMb5odL0G3CuswaZovQAcK6e61yaj8FAK7aB0cyvAQis5-zipSpxUuqaAIpUQwQmZjxkvhYQA8a9umMTs",
-    tags: ["Latency Control", "Spring WebFlux", "Resilience4j"],
+      "Otimização de sistemas de integração utilizando Java 21/17 e Spring Boot, garantindo o fluxo contínuo de dados entre serviços distribuídos.\n- Melhorei a confiabilidade do sistema através da implementação de padrões avançados de tratamento de erros e estratégias de retry, reduzindo significativamente as intervenções manuais e a perda de dados.\n- Sustentei ferramentas internas e dashboards utilizando React, fornecendo visibilidade ponta a ponta (end-to-end) da saúde das integrações e métricas de dados.",
+    techStack: ["Java 21/17", "JavaScript", "Spring Boot", "React", "JUnit", "Mockito", "PostgreSQL", "BigQuery", "GCP", "Splunk", "Docker", "Git", "GitLab CI/CD", "JPA/Hibernate"],
   },
   {
-    id: "CASE_02",
-    title: "Integrações Globais (Equifax)",
+    id: "EXP_03",
+    company: "Inter",
+    role: "Software Engineer",
+    period: "maio de 2024 - dezembro de 2025 (1 ano 8 meses)",
     description:
-      "Arquitetura de sistemas distribuídos para sincronização de dados transcontinentais. Orquestração de mensageria complexa e conformidade com padrões globais de segurança.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBobrLVP6pGa0GtkgVvJLNnV5LshLrC8D_u-e4r55D6cNShvTpqQfkkpH3mlVNLv79YXdXElJnAlwSn5z6IYdd7FpXUlLh3qPY1Fnjr0Aqf-PciewPMkA34O-Pwky6QmVLdCQHBaTT0iE9WCcDh_OQdsVKzalUCBs3nLR2TLFVXoO8az6dYB29sb2sCxckhY01FQpbSM3r1X1S1n4QWnxWOwkulYRhnq_k0C5tAou7hoc0dOMZdkDlMEzWtYoPAYS-fc2VFxr8rdnM",
-    tags: ["GCP Pub/Sub", "Multi-region", "Distributed Tracing"],
+      "Atuei em projetos relacionados a plataforma PIX. Fui responsável pelo desenvolvimento de novos produtos e serviços, além da manutenção e evolução de microserviços em um ambiente cloud-native, com foco na entrega de soluções de backend escaláveis, confiáveis e de alta performance que suportam operações financeiras críticas.\n- Desenvolvi RESTful APIs utilizando Micronaut, permitindo a comunicação eficiente entre serviços.\n- Implementei arquiteturas robustas orientadas a eventos (event-driven) utilizando Kafka.\n- Apliquei princípios arquiteturais incluindo SOLID, Clean Architecture e DDD.\n- Trabalhei em um ambiente cloud-native utilizando AWS, Docker e Kubernetes.\n- Gerenciei infraestrutura utilizando IaC com Terraform.",
+    techStack: ["Java 21/17", "TypeScript", "Micronaut", "Spring Boot", "React", "Kafka", "PostgreSQL", "AWS (EKS, MSK, RDS, S3)", "OpenTelemetry", "Docker", "Kubernetes", "Terraform", "GitOps", "ArgoCD", "Micronaut Data"],
   },
+  {
+    id: "EXP_02",
+    company: "Sea Solutions",
+    role: "Software Engineer",
+    period: "outubro de 2023 - maio de 2024 (8 meses)",
+    location: "Brasília, Distrito Federal, Brasil",
+    description:
+      "Liderei o desenvolvimento ponta a ponta de uma plataforma SaaS proprietária no setor de saúde, supervisionando a arquitetura da solução, documentação e implementação para entregar um produto escalável e robusto.\n- Desenvolvi e mantive RESTful APIs robustas utilizando Java e Spring Boot.\n- Implementei novas funcionalidades e otimizei serviços existentes.\n- Realizei o deploy e a operação de serviços no GCP utilizando Cloud Run e Pub/Sub.\n- Trabalhei extensivamente com sistemas de mensageria (Kafka, RabbitMQ).",
+    techStack: ["Java 17/8", "Python", "Spring Boot", "JUnit", "Testcontainers", "Kafka", "RabbitMQ", "Google Pub/Sub", "PostgreSQL", "SQL Server", "GCP", "Cloud Run", "Grafana", "Docker"],
+  },
+  {
+    id: "EXP_01",
+    company: "Sea Solutions",
+    role: "Junior Software Engineer",
+    period: "outubro de 2022 - outubro de 2023 (1 ano 1 mês)",
+    description:
+      "Atuei no ciclo de vida completo de projetos, desde a concepção até o deploy em produção, colaborando ativamente com clientes para garantir o alinhamento com os requisitos de negócio.\n- Desenvolvi e mantive RESTful APIs robustas utilizando Java e Spring Boot.\n- Integrei múltiplos serviços por meio de comunicação síncrona e assíncrona com Kafka.\n- Implementei e mantive pipelines de CI/CD utilizando GitLab.\n- Utilizei Spring Data, Hibernate e PostgreSQL para persistência de dados.",
+    techStack: ["Java 17/11/8", "Spring Boot", "Kafka", "PostgreSQL", "Azure", "Grafana", "Prometheus", "GitLab CI/CD", "Docker", "Hibernate"],
+  },
+];
+
+export const academicTimeline = [
+  {
+    id: "ACAD_02",
+    institution: "UniAmérica Descomplica",
+    course: "Higher Technology Course, Analysis and systems development",
+    period: "julho de 2022 - dezembro de 2024"
+  },
+  {
+    id: "ACAD_01",
+    institution: "IFB - Instituto Federal de Brasília",
+    course: "License, Mathematics",
+    period: "fevereiro de 2019 - fevereiro de 2022"
+  }
 ];
 
 export const githubProjects = [
